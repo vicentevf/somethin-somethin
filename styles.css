@@ -282,6 +282,7 @@ em{font-style:italic}
 
 /* ───── FOOTER ───── */
 .footer{background:var(--ink);color:var(--cream);text-align:center;padding:clamp(4.5rem,10vw,8rem) var(--pad) 3rem}
+.footer-logo{width:min(64vw,340px);margin:0 auto 2.2rem;display:block;opacity:.95}
 .footer-statement{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,8vw,6rem);line-height:1.02;letter-spacing:-.01em}
 .footer-statement em{color:var(--terra)}
 .footer-sub{margin-top:1.4rem;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;opacity:.6}
