@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somethin' — Good Food. Good Coffee. Good People.</title>
+    <meta
+      name="description"
+      content="Your neighborhood spot in Mount Maunganui for breakfast, brunch, coffee, and everything in between. Made for good food people." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ░░░ NAV ░░░ -->
+    <header class="nav" id="nav">
+      <a href="#top" class="nav-brand"
+        ><img src="images/logo.webp" alt="Somethin' Somethin'"
+      /></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#events">Events</a>
+        <a href="#club">The Club</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a href="#visit" class="nav-cta">Visit Us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <!-- ░░░ HERO ░░░ -->
+    <section class="hero" id="top">
+      <div class="hero-media" id="heroMedia"></div>
+      <div class="hero-tint"></div>
+      <div class="hero-content">
+        <span class="hero-kicker">Mount Maunganui &middot; Aotearoa NZ</span>
+        <img
+          src="images/logo.webp"
+          alt="Somethin' Somethin'"
+          class="hero-logo"
+          id="heroLogo"
+          onerror="
+            this.style.display = 'none';
+            document.getElementById('logoText').style.display = 'block';
+          " />
+        <h1 class="hero-logo-text" id="logoText">
+          somethin'<br /><span>somethin'</span>
+        </h1>
+        <p class="hero-sub">
+          Good Food. Good Coffee. Good People.<br />Your neighborhood spot for
+          breakfast, brunch &amp; everything in between.
+        </p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-solid">View Menu</a>
+          <a href="#visit" class="btn btn-line">Visit Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ COMMUNITY BANNER ░░░ -->
+    <section class="band community" id="community">
+      <div class="community-grid">
+        <div class="community-text reveal">
+          <span class="label">(01) — Community</span>
+          <h2 class="band-title">More than a café.</h2>
+          <p class="band-copy">
+            We make good food for good people. Whether you're grabbing your
+            morning coffee, meeting friends for brunch, or settling in for a
+            slow afternoon, <em>Somethin'</em> is built around community.
+          </p>
+        </div>
+        <div class="community-photo reveal"></div>
+      </div>
+    </section>
+
+    <!-- ░░░ SIGNATURE MENU ░░░ -->
+    <section class="section menu" id="menu">
+      <header class="section-head">
+        <span class="label">(02) — The Menu</span>
+        <h2 class="section-title">
+          A little somethin' for every part of the day.
+        </h2>
+      </header>
+      <div class="menu-grid">
+        <a href="#" class="menu-card tall reveal">
+          <div
+            class="card-img"
+            style="
+              --g: linear-gradient(150deg, #e7c9a6, #c9744d);
+              --img: url(&quot;images/breakfast.webp&quot;);
+            "></div>
+          <div class="card-meta">
+            <span class="card-no">01</span>
+            <h3>Breakfast</h3>
+            <p>Golden breakfast sandwiches, eggs your way, warm pastries.</p>
+          </div>
+        </a>
+        <a href="#" class="menu-card tall reveal">
+          <div
+            class="card-img"
+            style="
+              --g: linear-gradient(150deg, #b8a98c, #6e7a63);
+              --img: url(&quot;images/cafe.webp&quot;);
+            "></div>
+          <div class="card-meta">
+            <span class="card-no">02</span>
+            <h3>Coffee</h3>
+            <p>Specialty coffee, iced drinks & seasonal creations.</p>
+          </div>
+        </a>
+        <a href="#" class="menu-card tall reveal">
+          <div
+            class="card-img"
+            style="
+              --g: linear-gradient(150deg, #d8c7ae, #a88b63);
+              --img: url(&quot;images/lunch.webp&quot;);
+            "></div>
+          <div class="card-meta">
+            <span class="card-no">03</span>
+            <h3>Lunch</h3>
+            <p>Fresh sandwiches, burgers & generous share plates.</p>
+          </div>
+        </a>
+        <a href="#" class="menu-card tall reveal">
+          <div
+            class="card-img"
+            style="
+              --g: linear-gradient(150deg, #e9d6c2, #c58b6f);
+              --img: url(&quot;images/sweet.webp&quot;);
+            "></div>
+          <div class="card-meta">
+            <span class="card-no">04</span>
+            <h3>Sweet Things</h3>
+            <p>Pastries, cakes, cookies & treats worth the detour.</p>
+          </div>
+        </a>
+      </div>
+      <div class="reveal" style="text-align: center; margin-top: 3.5rem">
+        <a href="#our-menu" class="btn btn-line dark">See the Full Menu</a>
+      </div>
+    </section>
+
+    <!-- ░░░ ABOUT / OUR STORY ░░░ -->
+    <section class="section about" id="story">
+      <div class="about-grid">
+        <figure class="about-photo reveal">
+          <div class="about-img">
+            <img src="images/founders.jpg" alt="Owners" />
+          </div>
+          <figcaption>
+            Our founders &mdash; born-and-raised Mount locals.
+          </figcaption>
+        </figure>
+        <div class="about-text reveal">
+          <span class="label">(03) — Our Story</span>
+          <h2 class="section-title">
+            The Mount's favourite<br /><em>cafe, bar &amp; venue.</em>
+          </h2>
+          <p class="lead">
+            Somethin' Somethin' is The Mount's favourite licensed cafe, bar, and
+            event venue. We're the crew behind the viral matcha drinks, the
+            sell-out offcuts, and the newly covered sunniest deck in the Bay of
+            Plenty.
+          </p>
+          <p>
+            Breakfast, brunch, Friday night dinners, weekend bottomless brunch,
+            private functions, and out-catering… we do it all, and we do it with
+            heart.
+          </p>
+          <p>
+            Come find us at <em>2D Heath Street, Mount Maunganui</em>. We'd love
+            to have you!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ MEMBERSHIP ░░░ -->
+    <section class="club reveal" id="club">
+      <div class="club-inner">
+        <span class="label">(04) — The Club</span>
+        <h2 class="club-title">Join the Club.</h2>
+        <p class="club-copy">
+          Get rewards, exclusive offers, and a <em>free coffee</em> when you
+          sign up. It's our way of looking after the regulars — and soon-to-be
+          regulars.
+        </p>
+        <a href="#" class="btn btn-solid">Join Now</a>
+        <p class="club-fine">
+          No spam. Just good mornings &amp; the occasional treat.
+        </p>
+      </div>
+    </section>
+
+    <!-- ░░░ OUR MENU — collapsible ░░░ -->
+    <section class="section menus" id="our-menu">
+      <header class="section-head center reveal">
+        <span class="label">(05) — Our Menu</span>
+        <h2 class="section-title">Hungry? Take a peek.</h2>
+        <p class="section-intro">Everything's made fresh, all day. Open the menu for a look around — or just keep scrolling.</p>
+      </header>
+
+      <div class="menu-dropdown reveal">
+        <button class="menu-trigger" id="menuTrigger" aria-expanded="false" aria-controls="menuPanel">
+          <span>View the Full Menu</span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <div class="collapsible" id="menuPanel">
+          <div class="collapsible-inner">
+            <div class="menu-accordion">
+
+              <!-- All Day -->
+              <div class="macc-item">
+                <button class="macc-head"><span>All Day — Breakfast &amp; Lunch</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="collapsible"><div class="collapsible-inner"><ul class="menu-items">
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Somethin' Special</span><span class="mdots"></span><span class="mprice">$32.90</span></div><p class="mdesc">Eggs poached or fried, bacon, toscana sausage, rosti, crispy crumbed mushroom, grilled tomato, sourdough &amp; hollandaise.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">The Bene</span><span class="mdots"></span><span class="mprice">$22.90</span></div><p class="mdesc">Two poached eggs on rostis, housemade hollandaise.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Creamy Mushrooms</span><span class="mdots"></span><span class="mprice">$25.90</span></div><p class="mdesc">Our signature creamy mushroom medley, made with miso &amp; fresh thyme, served on sourdough.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Eggs on Toast</span><span class="mdots"></span><span class="mprice">$17.90</span></div><p class="mdesc">Poached or fried. Served with sourdough.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Open Thai Omelette</span><span class="mdots"></span><span class="mprice">$25.90</span></div><p class="mdesc">Thai-style omelette, crispy pork mince, fresh herb &amp; daikon salad, nahm jim dressing, chilli oil.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Somethin' Smooth Bowl</span><span class="mdots"></span><span class="mprice">$24.90</span></div><p class="mdesc">Housemade granola, soaked chia, raspberry compote, seasonal fruit &amp; coconut yoghurt with honey drizzle.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Wagyu Smash Burger</span><span class="mdots"></span><span class="mprice">$23.90</span></div><p class="mdesc">Wagyu beef patty smashed on the grill, chilli onion jam, American cheese, pickles, SS burger sauce.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Crispy Chicken Salad</span><span class="mdots"></span><span class="mprice">$29.90</span></div><p class="mdesc">Crispy fried chicken, housemade bang bang satay sauce, Asian slaw, lime peanuts, crispy shallots.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Chicken Sando</span><span class="mdots"></span><span class="mprice">$26.90</span></div><p class="mdesc">Thick white loaf, fried chicken, shredded cabbage, special sauce, pickles &amp; American cheese.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Banana Caramel Hotcakes</span><span class="mdots"></span><span class="mprice">$23.90</span></div><p class="mdesc">Fluffy hotcake stack, caramelised banana, salted caramel sauce, vanilla bean mascarpone, macadamia waffle crumb.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Somethin' Clucky</span><span class="mdots"></span><span class="mprice">$25.90</span></div><p class="mdesc">Crumbed chicken, chorizo and curd patty, bacon, chilli onion jam, kawakawa spinach mayo on brioche bun.</p></li>
+                </ul></div></div>
+              </div>
+
+              <!-- Sides -->
+              <div class="macc-item">
+                <button class="macc-head"><span>Sides &amp; Extras</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="collapsible"><div class="collapsible-inner"><ul class="menu-items compact">
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Fried Chicken Bowl</span><span class="mdots"></span><span class="mprice">$17.90</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Bowl of Fries — ketchup &amp; aioli</span><span class="mdots"></span><span class="mprice">$12</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Gravlax / Bacon / Halloumi</span><span class="mdots"></span><span class="mprice">$8</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Sausage / Chorizo</span><span class="mdots"></span><span class="mprice">$7.50</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Avocado</span><span class="mdots"></span><span class="mprice">$5</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Free range egg</span><span class="mdots"></span><span class="mprice">$4.50</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Rosti</span><span class="mdots"></span><span class="mprice">$5</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Mushrooms / Spinach</span><span class="mdots"></span><span class="mprice">$4</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Extra toast</span><span class="mdots"></span><span class="mprice">$4.50</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Hollandaise / Signature Chilli</span><span class="mdots"></span><span class="mprice">$4</span></div></li>
+                </ul></div></div>
+              </div>
+
+              <!-- Kids -->
+              <div class="macc-item">
+                <button class="macc-head"><span>Kids Menu</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="collapsible"><div class="collapsible-inner"><ul class="menu-items">
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Poached Egg &amp; Bacon</span><span class="mdots"></span><span class="mprice">$14.90</span></div><p class="mdesc">With toast.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Hotcakes</span><span class="mdots"></span><span class="mprice">$14</span></div><p class="mdesc">2 hotcakes with butter &amp; maple syrup.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Burger</span><span class="mdots"></span><span class="mprice">$10.90</span></div><p class="mdesc">Basic burger with ketchup.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Chicken &amp; Chips</span><span class="mdots"></span><span class="mprice">$15.90</span></div><p class="mdesc">Fried chicken bites with fries &amp; sauce.</p></li>
+                </ul></div></div>
+              </div>
+
+              <!-- Specialty Drinks -->
+              <div class="macc-item">
+                <button class="macc-head"><span>Specialty Drinks</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="collapsible"><div class="collapsible-inner"><ul class="menu-items">
+                  <li class="mrow"><div class="mrow-top"><span class="mname">The Mount Blanc</span><span class="mdots"></span><span class="mprice">$10.90</span></div><p class="mdesc">Single origin cold brew topped with vanilla, hazelnut &amp; orange cold foam whip.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">White Choc Coconut Iced Matcha</span><span class="mdots"></span><span class="mprice">$13.50</span></div><p class="mdesc">Iced coconut matcha topped with coconut white choc cold foam whip.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Citrus Sol</span><span class="mdots"></span><span class="mprice">$10.90</span></div><p class="mdesc">Single shot espresso, East Imperial tonic, lemon &amp; lime, agave.</p></li>
+                </ul></div></div>
+              </div>
+
+              <!-- Hot & Cold Drinks -->
+              <div class="macc-item">
+                <button class="macc-head"><span>Coffee, Tea &amp; Cold Drinks</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="collapsible"><div class="collapsible-inner"><ul class="menu-items compact">
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Long Black / Short Black / Americano</span><span class="mdots"></span><span class="mprice">$5.20</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Flat White / Latte / Cappuccino</span><span class="mdots"></span><span class="mprice">from $5.70</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Specialty Lattes — Matcha / Turmeric / Spiced Pumpkin</span><span class="mdots"></span><span class="mprice">from $7.50</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Hot Chocolate</span><span class="mdots"></span><span class="mprice">from $5.50</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Hakanoa Chai Dirty</span><span class="mdots"></span><span class="mprice">from $6</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Websters Tea — selection</span><span class="mdots"></span><span class="mprice">$5.20</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Iced Americano</span><span class="mdots"></span><span class="mprice">$6.70</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Iced Latte</span><span class="mdots"></span><span class="mprice">$8.70</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Iced Chocolate</span><span class="mdots"></span><span class="mprice">$7.90</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Iced Matcha</span><span class="mdots"></span><span class="mprice">$9.50</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Chocolate Frappe</span><span class="mdots"></span><span class="mprice">$11.90</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Fresh Squeezed Orange Juice</span><span class="mdots"></span><span class="mprice">$9.90</span></div></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Tomato Juice</span><span class="mdots"></span><span class="mprice">$6.90</span></div></li>
+                </ul></div></div>
+              </div>
+
+              <!-- Smoothies -->
+              <div class="macc-item">
+                <button class="macc-head"><span>Smoothies</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="collapsible"><div class="collapsible-inner"><ul class="menu-items">
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Energy Nut</span><span class="mdots"></span><span class="mprice">$14.90</span></div><p class="mdesc">Banana, dates, cacao, peanut butter, vanilla, almond milk.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Banana Honey</span><span class="mdots"></span><span class="mprice">$14.90</span></div><p class="mdesc">Banana, coconut yoghurt, oat milk, honey, cinnamon.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Mango Lassi</span><span class="mdots"></span><span class="mprice">$14.90</span></div><p class="mdesc">Mango, coconut yoghurt, coconut milk, cardamom.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Energise</span><span class="mdots"></span><span class="mprice">$13.90</span></div><p class="mdesc">Strawberries, blueberries, apple, pineapple, dates, coconut water.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Green Goddess</span><span class="mdots"></span><span class="mprice">$15.90</span></div><p class="mdesc">Banana, green apple, spinach, sunflower seeds, kiwifruit, coconut water.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Classic Protein</span><span class="mdots"></span><span class="mprice">$13.90</span></div><p class="mdesc">Vanilla or chocolate protein blended with banana &amp; choice of milk.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Tiramisu Protein</span><span class="mdots"></span><span class="mprice">$16.90</span></div><p class="mdesc">Banana, espresso, vanilla protein, cacao nibs, almond milk.</p></li>
+                  <li class="mrow"><div class="mrow-top"><span class="mname">Jelly Tip Protein</span><span class="mdots"></span><span class="mprice">$16.90</span></div><p class="mdesc">Banana, raspberries &amp; strawberries, peanut butter, choc protein, cacao nibs, almond milk.</p></li>
+                </ul></div></div>
+              </div>
+
+              <!-- Cocktails, Wine & Beer -->
+              <div class="macc-item">
+                <button class="macc-head"><span>Somethin' Stronger — Cocktails, Wine &amp; Beer</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="collapsible"><div class="collapsible-inner">
+                  <p class="menu-subhead">Brunch Cocktails</p>
+                  <ul class="menu-items">
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Sicilian Margarita</span><span class="mdots"></span><span class="mprice">$20</span></div><p class="mdesc">Reposado, limoncello, honey, lemon.</p></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Aperol Spritz</span><span class="mdots"></span><span class="mprice">$16</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Somethin' About Mary</span><span class="mdots"></span><span class="mprice">$18</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Mimosa</span><span class="mdots"></span><span class="mprice">$13</span></div></li>
+                  </ul>
+                  <p class="menu-subhead">Wine &amp; Bubbles <span class="subnote">glass / bottle</span></p>
+                  <ul class="menu-items compact">
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Piper Heidsieck Brut NV</span><span class="mdots"></span><span class="mprice">$44 / $125</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Prosecco</span><span class="mdots"></span><span class="mprice">$18 / $56</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Chateau Routas Rosé, France</span><span class="mdots"></span><span class="mprice">$14 / $59</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Grower's Mark Pinot Gris, Marlborough</span><span class="mdots"></span><span class="mprice">$14 / $59</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Trinity Hill Sauvignon Blanc, Marlborough</span><span class="mdots"></span><span class="mprice">$14 / $59</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Allan Scott Black Chardonnay, Marlborough</span><span class="mdots"></span><span class="mprice">$14 / $59</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Rua Pinot Noir, Central Otago</span><span class="mdots"></span><span class="mprice">$16 / $68</span></div></li>
+                  </ul>
+                  <p class="menu-subhead">Beer &amp; Cider</p>
+                  <ul class="menu-items compact">
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Peroni — 330ml, 5%</span><span class="mdots"></span><span class="mprice">$12</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Heineken Zero — 330ml, 0%</span><span class="mdots"></span><span class="mprice">$10</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Mt Brewing Co Apple Cider — 330ml, 5%</span><span class="mdots"></span><span class="mprice">$11</span></div></li>
+                    <li class="mrow"><div class="mrow-top"><span class="mname">Shortboard Pale Ale — 330ml, 2.5%</span><span class="mdots"></span><span class="mprice">$11</span></div></li>
+                  </ul>
+                </div></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ EVENTS & FUNCTIONS ░░░ -->
+    <section class="events" id="events">
+      <div class="events-bg"></div>
+      <div class="events-tint"></div>
+      <div class="events-inner reveal">
+        <span class="label">Events &amp; Functions</span>
+        <h2 class="events-title">Your place for <em>the good times.</em></h2>
+        <p class="events-copy">
+          Friday night dinners, weekend bottomless brunch, and private functions
+          on the sunniest covered deck in the Bay — plus out-catering that brings
+          Somethin' to you. Whatever the occasion, we'll do it with heart.
+        </p>
+        <ul class="events-tags">
+          <li>Private Functions</li>
+          <li>Bottomless Brunch</li>
+          <li>Friday Night Dinners</li>
+          <li>Out-Catering</li>
+          <li>The Covered Deck</li>
+        </ul>
+        <div class="events-cta">
+          <a href="#" class="btn btn-solid">Enquire About Events</a>
+          <a href="#visit" class="btn btn-line">Visit Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ LOCATION ░░░ -->
+    <section class="section visit" id="visit">
+      <div class="visit-grid">
+        <div class="visit-photo reveal" id="storefront"></div>
+        <div class="visit-info reveal">
+          <span class="label">(06) — Visit</span>
+          <h2 class="section-title">See you soon.</h2>
+          <div class="visit-row">
+            <h4>Where</h4>
+            <p>
+              2D Heath Street<br />Mount Maunganui<br />Bay of Plenty, Aotearoa
+              NZ
+            </p>
+          </div>
+          <div class="visit-row">
+            <h4>Hours</h4>
+            <ul class="hours">
+              <li><span>Mon — Fri</span><span>6:30am – 3:00pm</span></li>
+              <li><span>Saturday</span><span>7:00am – 3:00pm</span></li>
+              <li><span>Sunday</span><span>7:00am – 2:00pm</span></li>
+            </ul>
+          </div>
+          <div class="visit-row">
+            <h4>Good to know</h4>
+            <div class="tags">
+              <span>Indoor seating</span><span>Outdoor seating</span
+              ><span>Takeaway</span><span>Catering</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-line dark">Get Directions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ FOOTER ░░░ -->
+    <footer class="footer">
+      <p class="footer-statement reveal">Made for <em>good food people.</em></p>
+      <p class="footer-sub">
+        Coffee &middot; Breakfast &middot; Lunch &middot; Community
+      </p>
+      <div class="footer-row">
+        <span class="footer-brand">somethin'</span>
+        <div class="footer-social">
+          <a href="#">Instagram</a><a href="#">Facebook</a
+          ><a href="#">TikTok</a>
+        </div>
+        <span class="footer-fine"
+          >© <span id="year"></span> Somethin' &middot; Mount Maunganui</span
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

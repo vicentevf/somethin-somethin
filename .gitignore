@@ -1,0 +1,5 @@
+# tooling / build artifacts — not part of the site
+.shot/
+_deploy/
+presentation/
+node_modules/
